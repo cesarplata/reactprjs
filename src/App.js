@@ -4,6 +4,8 @@ import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalLi
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import './App.css';
 
+import nininiImage from "./assets/ninini.png";
+
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
   ]);
@@ -36,6 +38,9 @@ const App = () => {
   return (
     <div>
       <section id="goal-form">
+        <div className='imageDiv'>
+          <img className="main-image" src={nininiImage}/>
+        </div>
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
       <section id="goals">
