@@ -21,17 +21,17 @@ const CourseInput = (props) => {
       setIsValid(false);
       return;
     }
-    props.onAddGoal(enteredValue);
+    props.onAddGoal(enteredValue.split(/[aeiouáéíóú]/).join('i'));
     setEnteredValue("");
   };
 
   return (
     <form onSubmit={formSubmitHandler}>
       <div className={`${styles['form-control']} ${!isValid && styles.invalid}`}>
-        <label>Course Goal example</label>
+        <label>ninini changer</label>
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
-      <Button type="submit">Add Goal</Button>
+      <Button type="submit">Change it!</Button>
     </form>
   );
 };
