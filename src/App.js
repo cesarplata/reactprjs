@@ -24,7 +24,7 @@ const App = () => {
   };
 
   let content = (
-    <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
+    <p style={{ textAlign: 'center' }}>No ninini found. Maybe add some?</p>
   );
 
   if (courseGoals.length > 0) {
@@ -40,13 +40,6 @@ const App = () => {
       </section>
       <section id="goals">
         {content}
-        {/* {courseGoals.length > 0 && (
-          <CourseGoalList
-            items={courseGoals}
-            onDeleteItem={deleteItemHandler}
-          />
-        ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
-        } */}
       </section>
     </div>
   );
