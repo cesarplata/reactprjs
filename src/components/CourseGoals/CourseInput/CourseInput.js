@@ -23,6 +23,7 @@ const CourseInput = (props) => {
     }
     props.onAddGoal(enteredValue.split(/[aeiouáéíóú]/).join('i'));
     setEnteredValue("");
+    event.target.reset();
   };
 
   return (

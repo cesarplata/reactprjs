@@ -10,7 +10,7 @@ const CourseGoalItem = props => {
     setDeleteText(true);
     console.info(props.children);
     navigator.clipboard.writeText(props.children);
-    //props.onDelete(props.id);
+    setInterval(function(){props.onDelete(props.id);},3000);
   };
 
   return (
